@@ -1,11 +1,52 @@
+:root {
+    --melona-green: #7affa7;
+}
+
 html {
     box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 body {
     margin: 0;
 }
 
+/* Typography */
+h1, h2, .shop-button {
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 88%;
+    letter-spacing: -2%;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-weight: 600; /* semibold */
+    font-size: 1.125em;
+}
+
+/* Button styles */
+button {
+    font-family: 'Fira Mono', monospace;
+    line-height: 100%;
+    border: 4px solid;
+    border-radius: 8px;
+    padding: 12px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.shop-button {
+    background-color: var(--melona-green);
+}
+
+/* structure */
 nav {
     display: grid;
     place-items: center;
@@ -15,5 +56,51 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 24px 32px 0px 32px;
+    max-width: 66.9em;
+    margin: 14px auto;
+    padding: 0 32px;
+}
+
+
+.hero--section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero--text {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    max-width: 23rem;
+}
+
+.hero_drink--img {
+    position: relative;
+    max-width: 100%;
+}
+
+.nutri--section {
+    text-align: center;
+    max-width: 23rem;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+
+.nutri--facts-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nutri--facts-item {
+    padding: 0 1.25em;
+}
+
+.nutri--facts-label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500; /* medium */
+    margin-top: 4px;
 }
