@@ -97,6 +97,7 @@ nav {
 
 .nutri--facts-item {
     padding: 0 1.25em;
+    width: 4.2em;
 }
 
 .nutri--facts-label {
@@ -119,4 +120,55 @@ nav {
 
 .jump--section p {
     margin-top: 0.425em;
+}
+
+.drinks--section {
+    margin: 2em 1em;
+    text-align: center;
+}
+
+.drinks--collection {
+    max-width: 65.875rem;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem 0rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.drinks--card {
+    border-radius: 8px;
+    width: 13.25rem;
+    height: 14.75rem;
+    border: black solid 4px;
+}
+
+.drinks--img {
+    margin-top: 0.2em;
+    height: 80%;
+}
+
+.drinks--label {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.lemon-zeal {
+    background-color: #FFF27A;
+}
+
+.berry-blast {
+    background-color: #9FA9FC;
+}
+
+.cherry {
+    background-color: #FF7A7A;
+}
+
+.melona {
+    background-color: #7AFFA7;
 }
