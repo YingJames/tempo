@@ -134,6 +134,7 @@ nav {
 #drinks--section {
     margin: 2em 1em;
     text-align: center;
+    scroll-margin-top: 1em;
 }
 
 .drinks--collection {
