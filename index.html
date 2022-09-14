@@ -21,7 +21,23 @@
 <body>
     <header class="header">
         <object data="./assets/logo.svg"></object>
-        <nav><object data="./assets/list.svg"></object></nav>
+        
+        <nav>
+            <a href="javascript:void(0)" onclick="openNav()" class="nav--wrap nav--open">
+                <img src="./assets/list.svg" class="nav--icon"></img>
+            </a>
+            <aside class="nav--sidebar">
+                <a href="javascript:void(0)" onclick="closeNav()" class="nav--close">
+                    <img src="./assets/close-menu.svg" class="nav--icon"></img>
+                </a>
+                <ul>
+                    <li><a href="#" class="nav--menu-item is-active">Home</a></li>
+                    <li><a href="#" class="nav--menu-item">About</a></li>
+                    <li><a href="#" class="nav--menu-item">Contact</a></li>
+                </ul>
+            </aside>
+        </nav>
+        
     </header>
 
     <main>
@@ -39,15 +55,15 @@
             <h2>Drink only what you are comfortable with</h2>
             <div class="nutri--facts-row">
                 <div class="nutri--facts-item">
-                    <img src="./assets/zero-sugar.png" alt="zero sugar symbol">
+                    <img src="./assets/nutri/zero-sugar.svg" alt="zero sugar symbol">
                     <p class="nutri--facts-label">no sugar</p>
                 </div>
                 <div class="nutri--facts-item">
-                    <img src="./assets/caffeine.png" alt="caffeine symbol">
+                    <img src="./assets/nutri/caffeine.svg" alt="caffeine symbol">
                     <p class="nutri--facts-label">120 mg caffeine</p>
                 </div>
                 <div class="nutri--facts-item is the only energy drink that can be customized to fit your needsfacts-item">
-                    <img src="./assets/vit.png" alt="zero sugar symbol">
+                    <img src="./assets/nutri/vitamin.svg" alt="zero sugar symbol">
                     <p class="nutri--facts-label">vitamin b</p>
                 </div>
             </div>
@@ -82,12 +98,14 @@
     </main>
 
     <footer class="footer--home">
-        <a href=""><button class="btn--buy">buy now</button></a>
+        <a href="#"><button class="btn--buy">buy now</button></a>
         <div class="footer--medias">
             <a href="#" class="media-icon"><img src="./assets/socials/fb.svg"></a>
             <a href="#" class="media-icon"><img src="./assets/socials/twitter.svg"></a>
             <a href="#" class="media-icon"><img src="./assets/socials/ig.svg"></a>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
